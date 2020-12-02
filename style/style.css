@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.homeContent {
+    background-color: #ececec;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.navtion {
+    display: flex;
+    width: 80%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    font-size: 25px;
+    color: #8a88ff;
+    font-family: 'Gamja Flower', cursive;
+    cursor: default;
+}
+
+.manu_btn {
+    color: #232323;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 1;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 50%;
+}
+
+.manu_btn:hover{
+    color: red;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12),inset -10px -10px 15px rgba(255,255,255,0.5),inset 10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.manu {
+    position: absolute;
+    right: 0;
+    background-color: #232323;
+    height: 100vh;
+    width: 350px;
+    top: 0;
+    display: none;
+    animation: manuanimation .90s ease;
+    z-index: 2;
+}
+
+@keyframes manuanimation {
+    0% {
+        transform: translateX(350px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100;
+    }
+}
+
+.manu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.manu ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 580;
+    text-align: right;
+    animation: manuFont 1.30s ease;
+    transition: .50s ease;
+    border-radius: 7px;
+}
+
+.manu ul li:hover {
+    box-shadow: 0px 0px 3px rgba(204, 203, 203, 0.5),5px 5px 8px -6px rgba(170, 165, 165, 0.5);
+}
+
+.manu ul li:hover a {
+    color: rgb(255, 0, 0);
+}
+
+@keyframes manuFont {
+    0% {
+        margin-bottom: 500px;
+    }
+
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+.manu ul li a {
+    text-decoration: none;
+    color: #8a88ff;
+}
+
+.singup_btn {
+    background-color: #232323;
+    border-radius: 10px;
+    color: rgb(255, 7, 7);
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgba(204, 203, 203, 0.5),5px 5px 8px -6px rgba(170, 165, 165, 0.5);
+}
+
+.close {
+    position: absolute;
+    right: 30px;
+    color: #8a88ff;
+    top: 30px;
+    font-size: 23px;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgba(204, 203, 203, 0.5),5px 5px 8px -6px rgba(170, 165, 165, 0.5);
+    border-radius: 50%;
+}
+.close:hover{
+   color: red;
+}
+
+.midelContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.midelContent h1 {
+    font-family: 'Yellowtail', cursive;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 10px;
+    color: #b4a0fa;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12);
+    cursor: default;
+}
+
+.midelContent p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    letter-spacing: 10px;
+    color: rgb(170, 170, 243);
+    cursor: default;
+}
+.btn{
+    display: inline-flex;
+}
+.btn samp{
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .50s ease;
+}
+.logIn{
+    background-color: #ececec;
+    color: #232323;
+    cursor: pointer;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12);
+}
+.singUP{
+    background-color: #ececec;
+    color: #232323;
+    cursor: pointer;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12);
+}
+.singUP:hover{
+    color: red;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12),inset -10px -10px 15px rgba(255,255,255,0.5),inset 10px 10px 15px rgba(70,70,70,0.12);
+}
+.logIn:hover{
+    color: red;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),10px 10px 15px rgba(70,70,70,0.12),inset -10px -10px 15px rgba(255,255,255,0.5),inset 10px 10px 15px rgba(70,70,70,0.12);
+}
+
+
+
+
+
+
+
+.aboutContent{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.fastAbout{
+    background-image: url(../image/bannerAbout.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rafsanImage{
+    display: flex;
+    justify-content: center;
+}
+.rafsanImage img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #ececec;
+}
+.fastAbout h1{
+    margin: 20px;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(98, 98, 252);
+    box-shadow: -2px -2px 10px rgba(76, 76, 77, 0.6),10px 10px 15px rgba(64, 64, 65, 0.12);
+    font-size: 25px;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.699);
+}
+.fastAbout p{
+    font-size: 13px;
+    letter-spacing: 10px;
+    color: rgb(7, 7, 180);
+    cursor: default;
+}
+.leftAbout{
+    text-align: center;
+}
+.fastAbout h3{
+    font-size: 13px;
+    color: rgb(27, 0, 182);
+    padding: 15px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    box-shadow: -2px -2px 10px rgba(220, 218, 255, 0.6),10px 10px 15px rgba(221, 208, 250, 0.12);
+    cursor: default;
+}
+.aboutContent_btn .fas {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    font-size: 30px;
+    color: rgb(238, 3, 3);
+    padding: 10px 12px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 10px rgba(220, 218, 255, 0.6),10px 10px 15px rgba(221, 208, 250, 0.12);
+    animation: arroIcons .50s infinite ease;
+    cursor: pointer;
+}
+@keyframes arroIcons{
+    0%{
+        transform: translateX(5px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+
+
+.secendAbout{
+    /* background-image: url(../image/rafsan.jpg),linear-gradient(black,red); */
+    background-image: url(../image/secndAbout.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    display: none;
+}
+.fastAbout h5{
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    left: 50%;
+    color: rgb(6, 1, 255);
+    padding: 10px;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow:  -3px -3px 3px rgba(231, 231, 231, 0.5),1px 1px 3px rgba(207, 207, 207, 0.856);
+    cursor: default;
+}
+.secendAbout h5 {
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    left: 50%;
+    color: rgb(6, 1, 255);
+    padding: 10px;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow:  -3px -3px 3px rgba(231, 231, 231, 0.5),1px 1px 3px rgba(207, 207, 207, 0.856);
+    cursor: default;
+}
+.skil{
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    left: 5%;
+    box-shadow: -2px -2px 10px rgba(220, 218, 255, 0.6),10px 10px 15px rgba(221, 208, 250, 0.12);
+    color: rgb(80, 80, 253);
+    bottom: 8%;
+    cursor: default;
+}
+.skil h2{
+    color: red;
+    letter-spacing: 3px;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    
+}
+.skil .progress {
+    background-color: transparent;
+    height: 13px;
+    width: 600px;
+    border: 1px solid #2000d4;
+    box-shadow:  inset -2px -2px 2px rgba(216, 205, 255, 0.5),inset 2px 2px 2px rgba(70,70,70,0.12);
+}
+.progress .bar {
+    background-color: #ececec;
+    height: 100%;
+    font-size: 10px;
+    
+}
+.progress .html{
+    width: 90%;
+    animation: htmlanimation .90s ease;
+}
+@keyframes htmlanimation {
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 90%;
+    }
+}
+.progress .css{
+    width: 80%;
+    animation: cssanimation .90s ease;
+}
+@keyframes cssanimation {
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 80%;
+    }
+}
+.progress .javaScript{
+    width: 50%;
+    animation: jsanimation .90s ease;
+}
+@keyframes jsanimation {
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 50%;
+    }
+}
+.progress .computer{
+    width: 85%;
+    animation: Canimation .90s ease;
+}
+@keyframes Canimation {
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 85%;
+    }
+}
+.secendAbout .fas {
+    position: absolute;
+    right: 40px;
+    font-size: 30px;
+    color: rgb(238, 3, 3);
+    padding: 10px 12px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 10px rgba(220, 218, 255, 0.6),10px 10px 15px rgba(221, 208, 250, 0.12);
+    animation: arroIcons .50s infinite ease;
+    cursor: pointer;
+}
+@keyframes arroIcons{
+    0%{
+        transform: translateX(5px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
